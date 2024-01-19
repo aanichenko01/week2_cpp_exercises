@@ -9,7 +9,7 @@ using namespace std;
 // Department will be defined in the code when it compiles the 
 // Student class, as the Department class is defined afterwards.
 // You can have a pointer to a forward declared class because a 
-// pointer is just an address in memory, so the compiler doens't
+// pointer is just an address in memory, so the compiler doesn't
 // need to know anything the data Department contains to work
 // out the data layout for Student. 
 class Department;
