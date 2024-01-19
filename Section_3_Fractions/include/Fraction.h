@@ -10,8 +10,8 @@ class Fraction {
     std::string toString();
     
     private:
+    Fraction simplify();
     int num;
     int denom;
-
 
 };

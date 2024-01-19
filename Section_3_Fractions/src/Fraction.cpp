@@ -2,7 +2,7 @@
 
 Fraction::Fraction(int a, int b): num(a), denom(b)
 {
-    
+
 }
 
 Fraction Fraction::reciprocal()
@@ -26,4 +26,8 @@ std::string Fraction::toString(){
     } else {
         return std::to_string(num) + "/" + std::to_string(denom);
     }
+}
+
+Fraction Fraction::simplify(){
+//    int test = numeric::gcd(6, 20);
 }
