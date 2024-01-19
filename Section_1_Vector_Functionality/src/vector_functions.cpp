@@ -6,14 +6,8 @@
 
 int countMultiplesOfFive(std::vector<int> v)
 {
-    int count = 0;
-    for(auto num : v) {
-        if(num % 5 == 0) {
-            count += 1;
-        }
-    }
-
-    return count;
+    int multiplesOfFive = std::count_if(v.begin(), v.end(), [](int x){return x%5 == 0;});
+    return multiplesOfFive;
 }
 
 
