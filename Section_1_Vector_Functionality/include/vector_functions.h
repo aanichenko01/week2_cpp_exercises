@@ -7,6 +7,6 @@
 
 int countMultiplesOfFive(std::vector<int>);
 
-void addElements(std::vector<int>, int, int);
+void addElements(std::vector<int> &, int, int);
 
 #endif
