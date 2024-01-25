@@ -4,13 +4,18 @@
 class Fraction {
     public:
     Fraction(int a, int b);
+
     Fraction reciprocal();
-    Fraction multiply(int a);
-    double toDouble();
-    std::string toString();
+
+    Fraction multiply(int a) const;
+
+    double toDouble() const;
+
+    std::string toString() const;
     
     private:
-    Fraction simplify();
+    void simplify();
+    
     int num;
     int denom;
 
