@@ -16,13 +16,17 @@ double IntegrateMonteCarlo3D(int n_points, double min, double max)
     double VolCube = std::pow((max - min), 3);
 
     //set up random number generator here
+    std::uniform_real_distribution<double> uniform_real(min, max);
+    std::mt19937 rng_mt;
+    // bind takes a function as first parameter and then arguments as the next few
+    auto generate_uniform_real = std::bind(uniform_real, rng_mt);
 
     for(int i = 0; i < n_points; i++)
     {
         //generate random points here
-        double x = 
-        double y =
-        double z = 
+        double x = generate_uniform_real();
+        double y = generate_uniform_real();
+        double z = generate_uniform_real();
         if(InsideUnitSphere(x, y, z)) count++;
     }
 
